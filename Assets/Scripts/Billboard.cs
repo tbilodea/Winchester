@@ -5,6 +5,7 @@ using System.Collections;
 public class Billboard : MonoBehaviour {
 
 	void Update () {
-        transform.LookAt(Camera.main.transform.position, -Vector3.up);
+        //new Vector3(Camera.main.transform.position.x, transform.y, Camera.main.transform.position.z)
+        transform.LookAt(new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z), Vector3.up);
 	}
 }

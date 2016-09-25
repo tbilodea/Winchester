@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 7b089a2349be8dc448c868ce382eca06
+timeCreated: 1474569889
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BezBevel
+    100002: BezHairLock000
+    100004: BezHairLock000_001
+    100006: BezHairLock000_002
+    100008: BezHairLock000_003
+    100010: BezHairLock000_004
+    100012: BezHairLock000_005
+    100014: BezHairLock000_006
+    100016: BezHairLock000_007
+    100018: BezHairLock000_008
+    100020: BezHairLock000_009
+    100022: BezHairLock000_010
+    100024: BezHairLock000_011
+    100026: BezTaper_A
+    100028: //RootNode
+    100030: Plane
+    400000: BezBevel
+    400002: BezHairLock000
+    400004: BezHairLock000_001
+    400006: BezHairLock000_002
+    400008: BezHairLock000_003
+    400010: BezHairLock000_004
+    400012: BezHairLock000_005
+    400014: BezHairLock000_006
+    400016: BezHairLock000_007
+    400018: BezHairLock000_008
+    400020: BezHairLock000_009
+    400022: BezHairLock000_010
+    400024: BezHairLock000_011
+    400026: BezTaper_A
+    400028: //RootNode
+    400030: Plane
+    2300000: BezBevel
+    2300002: BezHairLock000
+    2300004: BezHairLock000_001
+    2300006: BezHairLock000_002
+    2300008: BezHairLock000_003
+    2300010: BezHairLock000_004
+    2300012: BezHairLock000_005
+    2300014: BezHairLock000_006
+    2300016: BezHairLock000_007
+    2300018: BezHairLock000_008
+    2300020: BezHairLock000_009
+    2300022: BezHairLock000_010
+    2300024: BezHairLock000_011
+    2300026: BezTaper_A
+    2300028: Plane
+    3300000: BezBevel
+    3300002: BezHairLock000
+    3300004: BezHairLock000_001
+    3300006: BezHairLock000_002
+    3300008: BezHairLock000_003
+    3300010: BezHairLock000_004
+    3300012: BezHairLock000_005
+    3300014: BezHairLock000_006
+    3300016: BezHairLock000_007
+    3300018: BezHairLock000_008
+    3300020: BezHairLock000_009
+    3300022: BezHairLock000_010
+    3300024: BezHairLock000_011
+    3300026: BezTaper_A
+    3300028: Plane
+    4300000: BezBevel
+    4300002: BezTaper_A
+    4300004: BezHairLock000_011
+    4300006: BezHairLock000_010
+    4300008: BezHairLock000_009
+    4300010: BezHairLock000_008
+    4300012: BezHairLock000_007
+    4300014: BezHairLock000_006
+    4300016: BezHairLock000_005
+    4300018: BezHairLock000_004
+    4300020: BezHairLock000_003
+    4300022: BezHairLock000_002
+    4300024: BezHairLock000_001
+    4300026: BezHairLock000
+    4300028: Plane
+    6400000: BezBevel
+    6400002: BezHairLock000
+    6400004: BezHairLock000_001
+    6400006: BezHairLock000_002
+    6400008: BezHairLock000_003
+    6400010: BezHairLock000_004
+    6400012: BezHairLock000_005
+    6400014: BezHairLock000_006
+    6400016: BezHairLock000_007
+    6400018: BezHairLock000_008
+    6400020: BezHairLock000_009
+    6400022: BezHairLock000_010
+    6400024: BezHairLock000_011
+    6400026: BezTaper_A
+    6400028: Plane
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

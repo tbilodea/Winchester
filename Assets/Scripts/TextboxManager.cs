@@ -102,9 +102,9 @@ public class TextboxManager : MonoBehaviour {
             _currentText = printThis.Substring(0,_lengthOfText);
             _lengthOfText++;
             _textAsset.text =_currentText;
-            new WaitForSeconds(.01f); //give a pause so it looks like it's slowly scrolling out
-            yield return null;
-            if(_lengthOfText == printThis.Length)
+            
+            yield return new WaitForSeconds(.01f); //give a pause so it looks like it's slowly scrolling out
+            if (_lengthOfText == printThis.Length)
             {
                 _printing = false; //exits loop
             }

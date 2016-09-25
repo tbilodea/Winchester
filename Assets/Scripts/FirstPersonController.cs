@@ -77,6 +77,7 @@ public class FirstPersonController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        //This is menu control
         if (Input.GetKeyDown(KeyCode.Escape)) //control pause menu
         {
             if (!PauseMenu.aPauseMenu.gameObject.activeInHierarchy) //if the menu isn't up
@@ -89,6 +90,8 @@ public class FirstPersonController : MonoBehaviour
                 PauseMenu.aPauseMenu.gameObject.SetActive(false); //else make it disappear
             }
         }
+
+        //Player Control
         if (!PauseMenu.aPauseMenu.gameObject.activeInHierarchy)
         { //check if pause menu is up, only thing that works are the buttons then
             if (!TextboxManager.aTextboxManager.gameObject.activeInHierarchy) //check if textbox is alive
@@ -126,11 +129,9 @@ public class FirstPersonController : MonoBehaviour
                 }
                 else //if there is something in hand
                 {
-                    if (_interacting) //and we are trying to interact
+                    if (_interacting) //if we are trying to interact
                     {
-                        playerHand.GetComponent<HandObject>().stopParentByVelocity(); //drop the gameobject
-                        _isObjectInHand = false;
-                        _time = 0f; //reset timer to not pick it up again
+                        removeFromHand(); //drop object
                     }
                 }
 
@@ -185,35 +186,20 @@ public class FirstPersonController : MonoBehaviour
     {
         //set instead the object to try to get to the transform using a velocity^2 by distance
         playerHand.GetComponent<HandObject>().setParentByVelocity(thisInHand);
-            //thisInHand.transform.SetParent(playerHand.transform);
-       
+        
         //sets object for FPC
         _isObjectInHand = true;
         _holdingThisGameobject = thisInHand;
-
     }
 
-    //start linedraw raycast check
-/*        void drawMyLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
+    //removes an object from player's hand
+    public void removeFromHand()
     {
-        StartCoroutine(drawLine(start, end, color, duration));
+        playerHand.GetComponent<HandObject>().stopParentByVelocity(); //drop the gameobject
+        _isObjectInHand = false;
+        _time = 0f; //reset timer to not pick it up again
     }
-
-    IEnumerator drawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
-    {
-        GameObject myLine = new GameObject();
-        myLine.transform.position = start;
-        myLine.AddComponent<LineRenderer>();
-        LineRenderer lr = myLine.GetComponent<LineRenderer>();
-        lr.material = new Material(Shader.Find("Particles/Additive"));
-        lr.SetColors(color, color);
-        lr.SetWidth(0.1f, 0.1f);
-        lr.SetPosition(0, start);
-        lr.SetPosition(1, end);
-        yield return new WaitForSeconds(duration);
-        GameObject.Destroy(myLine);
-    }*/
-    //end linedraw
+    
     private void PlayLandingSound()
     {
         m_AudioSource.clip = m_LandSound;
