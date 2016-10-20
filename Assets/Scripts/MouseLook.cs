@@ -26,19 +26,40 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_CharacterTargetRot = character.localRotation;
             m_CameraTargetRot = camera.localRotation;
         }
+        
 
-
-        public void LookRotation(Transform character, Transform camera)
+        public void LookRotation(Transform character, Transform camera, params float[] rotations)
         {
-            float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
-            float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
+            float xRot = 0f;
+            float yRot = 0f;
+            if (rotations.Length == 2) //global rotations sent in
+            {
+                float globalXRot = rotations[0];
+                float globalYRot = rotations[1];
+                
+                //find what x and y rotations we need to get
+                float globalX = camera.localRotation.eulerAngles.x; //0-90 down, 270-360 upper
+                if(globalX >= 270)
+                {
+                    globalX = globalX - 360; //should have range -90 to 90
+                }
+                float globalY = character.localRotation.eulerAngles.y;
+                xRot = (globalXRot + globalX);
+                yRot = globalYRot - globalY;
+            }else
+            {
+                yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity; //get input
+                xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
+            }
 
             m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
             m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
 
+            //i think this handles the singularities of a sphere of vision/out of bounds (bending backwards)
+            //whoever decided to work in quaternions for this and not comment is a jackass
             if(clampVerticalRotation)
                 m_CameraTargetRot = ClampRotationAroundXAxis (m_CameraTargetRot);
-
+            
             if(smooth)
             {
                 character.localRotation = Quaternion.Slerp (character.localRotation, m_CharacterTargetRot,
@@ -54,7 +75,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             UpdateCursorLock();
         }
-
+        
         public void SetCursorLock(bool value)
         {
             lockCursor = value;

@@ -52,7 +52,8 @@ public class FirstPersonController : MonoBehaviour
     private GameObject playerHand; //gameobject to store anything that is movable
     private bool _isObjectInHand; //if there is an object in player hand
     private LayerMask interactableLayer;
-
+    private bool blockingObject; //check if there is an object in front of our interactable one
+    
     // Use this for initialization
     private void Start()
     {
@@ -73,7 +74,6 @@ public class FirstPersonController : MonoBehaviour
         interactableLayer.value = LayerMask.GetMask("Interactable");
     }
 
-
     // Update is called once per frame
     private void Update()
     {
@@ -82,12 +82,17 @@ public class FirstPersonController : MonoBehaviour
         {
             if (!PauseMenu.aPauseMenu.gameObject.activeInHierarchy) //if the menu isn't up
             {
-                Cursor.visible = true;
+                Debug.Log(Cursor.visible);
                 PauseMenu.aPauseMenu.gameObject.SetActive(true); //make it appear
-            }else
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                Debug.Log(Cursor.visible);
+            }
+            else
             {
-                Cursor.visible = false;
                 PauseMenu.aPauseMenu.gameObject.SetActive(false); //else make it disappear
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
         }
 
@@ -108,13 +113,25 @@ public class FirstPersonController : MonoBehaviour
 
                 Physics.Raycast(new Ray((m_Camera.transform.position), m_Camera.transform.forward), out hit, _lengthOfHands, interactableLayer);
                 //checks what is under the mouse and raycasts through it in a reasonable distance
+                RaycastHit hitNoninteract;
+                Physics.Raycast(new Ray((m_Camera.transform.position), m_Camera.transform.forward), out hitNoninteract, _lengthOfHands);
+                if (hitNoninteract.collider && hit.collider)
+                {
+                    if (hitNoninteract.collider.name != hit.collider.name && hitNoninteract.collider.name!="FPSController") {
+                        blockingObject = true;
+                    }else
+                    {
+                        blockingObject = false;
+                    }
+                    Debug.Log(hitNoninteract.collider.name);
+                }
+                //check for if a object is in front of it
             
                 if (!_isObjectInHand) //as long as there is no object already in your hand
                 {
                     if (hit.collider)
                     {
-                        Debug.Log(hit.collider.name);
-                        if (hit.collider.GetComponent<Interaction>())//check if we can interact with the object
+                        if (hit.collider.GetComponent<Interaction>() && !blockingObject)//check if we can interact with the object
                         {
                             _interactable = true; //show grab hand below
 
@@ -197,6 +214,7 @@ public class FirstPersonController : MonoBehaviour
     {
         playerHand.GetComponent<HandObject>().stopParentByVelocity(); //drop the gameobject
         _isObjectInHand = false;
+        _holdingThisGameobject = null;
         _time = 0f; //reset timer to not pick it up again
     }
     
@@ -361,6 +379,18 @@ public class FirstPersonController : MonoBehaviour
         m_MouseLook.LookRotation (transform, m_Camera.transform);
     }
 
+    //rotates character using mouselook -modified-
+    public void RotateCharacter(float xRot, float yRot)
+    {
+        m_MouseLook.LookRotation(transform, m_Camera.transform, xRot, yRot);
+    }
+
+    public void RotateCharacterSmooth(float xRot, float yRot)
+    {
+        m_MouseLook.smooth = true;
+        m_MouseLook.LookRotation(transform, m_Camera.transform, xRot, yRot);
+        m_MouseLook.smooth = false;
+    }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
@@ -376,6 +406,12 @@ public class FirstPersonController : MonoBehaviour
             return;
         }
         body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+    }
+
+    public void setMouseLookSensitivity(float sensitive)
+    {
+        m_MouseLook.XSensitivity = sensitive;
+        m_MouseLook.YSensitivity = sensitive;
     }
 }
 

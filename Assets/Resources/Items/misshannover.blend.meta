@@ -6,12 +6,61 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Armature
+    100004: Bone
+    100006: dressB
+    100008: dressF
+    100010: dressL
+    100012: dressR
+    100014: head
+    100016: leg_L
+    100018: leg_R
+    100020: lowerArm_L
+    100022: lowerArm_R
+    100024: lowerBack
+    100026: mitten_L
+    100028: mitten_R
+    100030: neck
+    100032: Plane
+    100034: thumb_L
+    100036: thumb_R
+    100038: upperArm_L
+    100040: upperArm_R
+    100042: upperBack
+    100044: waist
     400000: //RootNode
+    400002: Armature
+    400004: Bone
+    400006: dressB
+    400008: dressF
+    400010: dressL
+    400012: dressR
+    400014: head
+    400016: leg_L
+    400018: leg_R
+    400020: lowerArm_L
+    400022: lowerArm_R
+    400024: lowerBack
+    400026: mitten_L
+    400028: mitten_R
+    400030: neck
+    400032: Plane
+    400034: thumb_L
+    400036: thumb_R
+    400038: upperArm_L
+    400040: upperArm_R
+    400042: upperBack
+    400044: waist
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plane
-    7400000: Default Take
+    7400000: Run
+    7400002: Walk
+    7400004: Idle
+    7400006: SitDown
+    7400008: SitIdle
     9500000: //RootNode
+    13700000: Plane
   materials:
     importMaterials: 1
     materialName: 0
@@ -19,7 +68,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -32,7 +81,377 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/dressB
+        weight: 1
+      - path: Armature/Bone/dressF
+        weight: 1
+      - path: Armature/Bone/dressL
+        weight: 1
+      - path: Armature/Bone/dressR
+        weight: 1
+      - path: Armature/Bone/leg_L
+        weight: 1
+      - path: Armature/Bone/leg_R
+        weight: 1
+      - path: Armature/Bone/lowerBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck/head
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/mitten_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/thumb_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/mitten_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/thumb_R
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: ArmatureAction
+      firstFrame: 100
+      lastFrame: 137
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/dressB
+        weight: 1
+      - path: Armature/Bone/dressF
+        weight: 1
+      - path: Armature/Bone/dressL
+        weight: 1
+      - path: Armature/Bone/dressR
+        weight: 1
+      - path: Armature/Bone/leg_L
+        weight: 1
+      - path: Armature/Bone/leg_R
+        weight: 1
+      - path: Armature/Bone/lowerBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck/head
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/mitten_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/thumb_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/mitten_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/thumb_R
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: ArmatureAction
+      firstFrame: 50
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/dressB
+        weight: 1
+      - path: Armature/Bone/dressF
+        weight: 1
+      - path: Armature/Bone/dressL
+        weight: 1
+      - path: Armature/Bone/dressR
+        weight: 1
+      - path: Armature/Bone/leg_L
+        weight: 1
+      - path: Armature/Bone/leg_R
+        weight: 1
+      - path: Armature/Bone/lowerBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck/head
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/mitten_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/thumb_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/mitten_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/thumb_R
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SitDown
+      takeName: ArmatureAction
+      firstFrame: 140
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/dressB
+        weight: 1
+      - path: Armature/Bone/dressF
+        weight: 1
+      - path: Armature/Bone/dressL
+        weight: 1
+      - path: Armature/Bone/dressR
+        weight: 1
+      - path: Armature/Bone/leg_L
+        weight: 1
+      - path: Armature/Bone/leg_R
+        weight: 1
+      - path: Armature/Bone/lowerBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck/head
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/mitten_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/thumb_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/mitten_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/thumb_R
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SitIdle
+      takeName: ArmatureAction
+      firstFrame: 180
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/dressB
+        weight: 1
+      - path: Armature/Bone/dressF
+        weight: 1
+      - path: Armature/Bone/dressL
+        weight: 1
+      - path: Armature/Bone/dressR
+        weight: 1
+      - path: Armature/Bone/leg_L
+        weight: 1
+      - path: Armature/Bone/leg_R
+        weight: 1
+      - path: Armature/Bone/lowerBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/neck/head
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/mitten_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_L/lowerArm_L/thumb_L
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/mitten_R
+        weight: 1
+      - path: Armature/Bone/lowerBack/waist/upperBack/upperArm_R/lowerArm_R/thumb_R
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

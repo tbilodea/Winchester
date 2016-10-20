@@ -13,11 +13,14 @@ public class LoadNextScene : MonoBehaviour {
 	void OnTriggerEnter (Collider collider) {
 	    if(collider.tag == "Player")
         {
-            try { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); }
-            catch{
-                Scene thisScene = SceneManager.GetActiveScene();
-                Debug.LogError("Failed to load scene "+ thisScene.buildIndex);
-            }
+            StartCoroutine(changeLevel());
         }
 	}
+
+    private IEnumerator changeLevel()
+    {
+        yield return StartCoroutine(Fade.aFade.FadetoBlack());
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

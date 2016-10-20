@@ -57,7 +57,7 @@ public class HandObject : MonoBehaviour {
         _heldRigidbody.useGravity = false;
     }
 
-    //ceases the function setparentbyveloctiy
+    //ceases the setparentbyveloctiy relationship
     public void stopParentByVelocity()
     {
         //_heldRigidbody.freezeRotation = false;

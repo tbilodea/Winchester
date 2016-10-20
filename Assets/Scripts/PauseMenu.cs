@@ -13,11 +13,12 @@ public class PauseMenu : MonoBehaviour {
     [SerializeField]private GameObject _quitMenu;
     [SerializeField]private GameObject _volumeSlider;
     [SerializeField]private AudioClip _testAudio;
-    
-	// Use this for initialization
-	void Start () {
-        aPauseMenu = Singleton<PauseMenu>.Instance;
+    [SerializeField]private GameObject _mouseSensitivity;
 
+    // Use this for initialization
+    void Awake () {
+        aPauseMenu = Singleton<PauseMenu>.Instance;
+        gameObject.SetActive(false);
         //set options and quit items
 	}
 
@@ -33,6 +34,11 @@ public class PauseMenu : MonoBehaviour {
         {
             //find where to put clip on main menu;
         }
+    }
+
+    public void sensitivityChange()
+    {
+        FirstPersonController.aFirstPersonController.setMouseLookSensitivity(_mouseSensitivity.GetComponent<Slider>().value);
     }
 
 	public void clickResumeButton()
@@ -81,6 +87,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void clickYesQuitMenu()
     {
+        aPauseMenu.gameObject.SetActive(false);
         Application.Quit();
     }
 }

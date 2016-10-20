@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TextboxManager : MonoBehaviour {
     public static TextboxManager aTextboxManager;
     public bool continueOn;
+    public TextAsset credits;
     
     private Text _textAsset; //UI's showing text
     private string _currentText; //current text showing
@@ -14,6 +15,8 @@ public class TextboxManager : MonoBehaviour {
     private int _lineOfText; //current line that we are on
     private int _lengthOfText;
     private bool _breakLetterPrinter;
+    private Interaction calledByThisInteraction;
+    private AudioSource textAudioSource;
     
     //IO for files
     private FileStream _fileStream;
@@ -27,11 +30,18 @@ public class TextboxManager : MonoBehaviour {
         }
         _currentText = ""; //show nothing to begin with
         gameObject.SetActive(false); //and turn off our textbox
+
+        textAudioSource = gameObject.GetComponent<AudioSource>();
+        if (credits)
+        {
+            loadScript(credits, null);
+        }
     }
 
     //this loads the script in so that it is ready for printing
-    public void loadScript(TextAsset txtAsset)
+    public void loadScript(TextAsset txtAsset, Interaction thisInteraction)
     {
+        calledByThisInteraction = thisInteraction;
         //open textScript and read into _textToShow array by line
         if(txtAsset != null)
         {
@@ -61,7 +71,12 @@ public class TextboxManager : MonoBehaviour {
     {
         gameObject.SetActive(false);
         _textAsset.text = "";
-        //UNFREEZE PLAYER MOVEMENT FirstPersonController.aFirstPersonController.frozen = false;
+        _lineOfText = 0;
+        if (calledByThisInteraction)
+        {
+            calledByThisInteraction._interactionFinished = true;
+        }
+        //UNFREEZE PLAYER MOVEMENT
     }
 
     //once per frame
@@ -72,9 +87,8 @@ public class TextboxManager : MonoBehaviour {
             if (continueOn) //if button is pressed to proceed to change textbox accordingly
             {
                 continueOn = false; //ready for next input
-                
-                if (_lineOfText < _textToShow.Length) //check if we have shown all text
-                {
+                if (_lineOfText < _textToShow.Length || _printing) //check if we have shown all text or are still printing
+                {//THIS AREA COULD CRASH THE GAME WITH A OUTSIDE ARRAY BOUNDS EXCEPTION IF _printing SWITCHES BETWEEN THESE TWO IFS
                     if (_printing) //check if we are cancelling the rest of printing
                     {
                         _breakLetterPrinter = true; //this will break the coroutine and print the whole text
@@ -102,8 +116,9 @@ public class TextboxManager : MonoBehaviour {
             _currentText = printThis.Substring(0,_lengthOfText);
             _lengthOfText++;
             _textAsset.text =_currentText;
-            
-            yield return new WaitForSeconds(.01f); //give a pause so it looks like it's slowly scrolling out
+
+            textAudioSource.Play();
+            yield return new WaitForSeconds(.05f); //give a pause so it looks like it's slowly scrolling out
             if (_lengthOfText == printThis.Length)
             {
                 _printing = false; //exits loop

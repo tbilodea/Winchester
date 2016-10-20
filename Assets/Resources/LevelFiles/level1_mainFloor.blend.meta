@@ -63,6 +63,64 @@ ModelImporter:
     100110: yidelRoomEntranceWall
     100112: yidelRoomExitWall
     100114: yidelRoomExitWall_001
+    100116: bathroom_002
+    100118: robinsBathroomBackWall_001
+    100120: robinsBathroomBackWall_002
+    100122: robinsBathroomBackWall_003
+    100124: robinsBathroomBackWall_004
+    100126: robinsBathroomBackWall_005
+    100128: robinsBathroomBackWall_006
+    100130: robinsBathroomBackWall_007
+    100132: robinsBathroomBackWall_008
+    100134: robinsBathroomBackWall_009
+    100136: robinsBathroomBackWall_010
+    100138: robinsBathroomBackWall_011
+    100140: robinsBathroomBackWall_012
+    100142: robinsBathroomBackWall_013
+    100144: robinsBathroomBackWall_014
+    100146: robinsBathroomBackWall_015
+    100148: robinsBathroomBackWall_016
+    100150: robinsBathroomBackWall_017
+    100152: robinsBathroomBackWall_018
+    100154: robinsBathroomBackWall_019
+    100156: robinsBathroomBackWall_020
+    100158: robinsBathroomBackWall_021
+    100160: robinsBathroomBackWall_022
+    100162: robinsBathroomEntranceWall_001
+    100164: robinsRoom_002
+    100166: robinsRoom_003
+    100168: robinsRoom_004
+    100170: robinsRoom_005
+    100172: robinsRoom_006
+    100174: robinsRoom_007
+    100176: robinsRoomBackwall_001
+    100178: robinsRoomBackwall_002
+    100180: robinsRoomBackwall_003
+    100182: robinsRoomBackwall_004
+    100184: robinsRoomBackwall_005
+    100186: robinsRoomBackwall_006
+    100188: robinsRoomBackwall_007
+    100190: robinsRoomBackwall_008
+    100192: robinsRoomBackwall_009
+    100194: robinsRoomBackwall_010
+    100196: robinsRoomBackwall_011
+    100198: robinsRoomBackwall_012
+    100200: robinsRoomBackwall_013
+    100202: robinsRoomBackwall_014
+    100204: robinsRoomEntranceWall_001
+    100206: robinsRoomExitWall_001
+    100208: robinsRoomExitWall_002
+    100210: robinsRoomSideWall_001
+    100212: robinsRoomSideWall_002
+    100214: robinsRoomSideWall_003
+    100216: robinsRoomSideWall_004
+    100218: robinsRoomSideWall_005
+    100220: robinsRoomSideWall_006
+    100222: robinsRoomSideWall_007
+    100224: robinsRoomSideWall_008
+    100226: robinsRoomSideWall_009
+    100228: robinsRoomSideWall_010
+    100230: robinsRoomSideWall_011
     400000: bathroom
     400002: bathroom_001
     400004: daisyBathoomWall_001
@@ -121,6 +179,64 @@ ModelImporter:
     400110: yidelRoomEntranceWall
     400112: yidelRoomExitWall
     400114: yidelRoomExitWall_001
+    400116: bathroom_002
+    400118: robinsBathroomBackWall_001
+    400120: robinsBathroomBackWall_002
+    400122: robinsBathroomBackWall_003
+    400124: robinsBathroomBackWall_004
+    400126: robinsBathroomBackWall_005
+    400128: robinsBathroomBackWall_006
+    400130: robinsBathroomBackWall_007
+    400132: robinsBathroomBackWall_008
+    400134: robinsBathroomBackWall_009
+    400136: robinsBathroomBackWall_010
+    400138: robinsBathroomBackWall_011
+    400140: robinsBathroomBackWall_012
+    400142: robinsBathroomBackWall_013
+    400144: robinsBathroomBackWall_014
+    400146: robinsBathroomBackWall_015
+    400148: robinsBathroomBackWall_016
+    400150: robinsBathroomBackWall_017
+    400152: robinsBathroomBackWall_018
+    400154: robinsBathroomBackWall_019
+    400156: robinsBathroomBackWall_020
+    400158: robinsBathroomBackWall_021
+    400160: robinsBathroomBackWall_022
+    400162: robinsBathroomEntranceWall_001
+    400164: robinsRoom_002
+    400166: robinsRoom_003
+    400168: robinsRoom_004
+    400170: robinsRoom_005
+    400172: robinsRoom_006
+    400174: robinsRoom_007
+    400176: robinsRoomBackwall_001
+    400178: robinsRoomBackwall_002
+    400180: robinsRoomBackwall_003
+    400182: robinsRoomBackwall_004
+    400184: robinsRoomBackwall_005
+    400186: robinsRoomBackwall_006
+    400188: robinsRoomBackwall_007
+    400190: robinsRoomBackwall_008
+    400192: robinsRoomBackwall_009
+    400194: robinsRoomBackwall_010
+    400196: robinsRoomBackwall_011
+    400198: robinsRoomBackwall_012
+    400200: robinsRoomBackwall_013
+    400202: robinsRoomBackwall_014
+    400204: robinsRoomEntranceWall_001
+    400206: robinsRoomExitWall_001
+    400208: robinsRoomExitWall_002
+    400210: robinsRoomSideWall_001
+    400212: robinsRoomSideWall_002
+    400214: robinsRoomSideWall_003
+    400216: robinsRoomSideWall_004
+    400218: robinsRoomSideWall_005
+    400220: robinsRoomSideWall_006
+    400222: robinsRoomSideWall_007
+    400224: robinsRoomSideWall_008
+    400226: robinsRoomSideWall_009
+    400228: robinsRoomSideWall_010
+    400230: robinsRoomSideWall_011
     2300000: bathroom
     2300002: bathroom_001
     2300004: daisyBathoomWall_001
@@ -178,6 +294,64 @@ ModelImporter:
     2300108: yidelRoomEntranceWall
     2300110: yidelRoomExitWall
     2300112: yidelRoomExitWall_001
+    2300114: bathroom_002
+    2300116: robinsBathroomBackWall_001
+    2300118: robinsBathroomBackWall_002
+    2300120: robinsBathroomBackWall_003
+    2300122: robinsBathroomBackWall_004
+    2300124: robinsBathroomBackWall_005
+    2300126: robinsBathroomBackWall_006
+    2300128: robinsBathroomBackWall_007
+    2300130: robinsBathroomBackWall_008
+    2300132: robinsBathroomBackWall_009
+    2300134: robinsBathroomBackWall_010
+    2300136: robinsBathroomBackWall_011
+    2300138: robinsBathroomBackWall_012
+    2300140: robinsBathroomBackWall_013
+    2300142: robinsBathroomBackWall_014
+    2300144: robinsBathroomBackWall_015
+    2300146: robinsBathroomBackWall_016
+    2300148: robinsBathroomBackWall_017
+    2300150: robinsBathroomBackWall_018
+    2300152: robinsBathroomBackWall_019
+    2300154: robinsBathroomBackWall_020
+    2300156: robinsBathroomBackWall_021
+    2300158: robinsBathroomBackWall_022
+    2300160: robinsBathroomEntranceWall_001
+    2300162: robinsRoom_002
+    2300164: robinsRoom_003
+    2300166: robinsRoom_004
+    2300168: robinsRoom_005
+    2300170: robinsRoom_006
+    2300172: robinsRoom_007
+    2300174: robinsRoomBackwall_001
+    2300176: robinsRoomBackwall_002
+    2300178: robinsRoomBackwall_003
+    2300180: robinsRoomBackwall_004
+    2300182: robinsRoomBackwall_005
+    2300184: robinsRoomBackwall_006
+    2300186: robinsRoomBackwall_007
+    2300188: robinsRoomBackwall_008
+    2300190: robinsRoomBackwall_009
+    2300192: robinsRoomBackwall_010
+    2300194: robinsRoomBackwall_011
+    2300196: robinsRoomBackwall_012
+    2300198: robinsRoomBackwall_013
+    2300200: robinsRoomBackwall_014
+    2300202: robinsRoomEntranceWall_001
+    2300204: robinsRoomExitWall_001
+    2300206: robinsRoomExitWall_002
+    2300208: robinsRoomSideWall_001
+    2300210: robinsRoomSideWall_002
+    2300212: robinsRoomSideWall_003
+    2300214: robinsRoomSideWall_004
+    2300216: robinsRoomSideWall_005
+    2300218: robinsRoomSideWall_006
+    2300220: robinsRoomSideWall_007
+    2300222: robinsRoomSideWall_008
+    2300224: robinsRoomSideWall_009
+    2300226: robinsRoomSideWall_010
+    2300228: robinsRoomSideWall_011
     3300000: bathroom
     3300002: bathroom_001
     3300004: daisyBathoomWall_001
@@ -235,6 +409,64 @@ ModelImporter:
     3300108: yidelRoomEntranceWall
     3300110: yidelRoomExitWall
     3300112: yidelRoomExitWall_001
+    3300114: bathroom_002
+    3300116: robinsBathroomBackWall_001
+    3300118: robinsBathroomBackWall_002
+    3300120: robinsBathroomBackWall_003
+    3300122: robinsBathroomBackWall_004
+    3300124: robinsBathroomBackWall_005
+    3300126: robinsBathroomBackWall_006
+    3300128: robinsBathroomBackWall_007
+    3300130: robinsBathroomBackWall_008
+    3300132: robinsBathroomBackWall_009
+    3300134: robinsBathroomBackWall_010
+    3300136: robinsBathroomBackWall_011
+    3300138: robinsBathroomBackWall_012
+    3300140: robinsBathroomBackWall_013
+    3300142: robinsBathroomBackWall_014
+    3300144: robinsBathroomBackWall_015
+    3300146: robinsBathroomBackWall_016
+    3300148: robinsBathroomBackWall_017
+    3300150: robinsBathroomBackWall_018
+    3300152: robinsBathroomBackWall_019
+    3300154: robinsBathroomBackWall_020
+    3300156: robinsBathroomBackWall_021
+    3300158: robinsBathroomBackWall_022
+    3300160: robinsBathroomEntranceWall_001
+    3300162: robinsRoom_002
+    3300164: robinsRoom_003
+    3300166: robinsRoom_004
+    3300168: robinsRoom_005
+    3300170: robinsRoom_006
+    3300172: robinsRoom_007
+    3300174: robinsRoomBackwall_001
+    3300176: robinsRoomBackwall_002
+    3300178: robinsRoomBackwall_003
+    3300180: robinsRoomBackwall_004
+    3300182: robinsRoomBackwall_005
+    3300184: robinsRoomBackwall_006
+    3300186: robinsRoomBackwall_007
+    3300188: robinsRoomBackwall_008
+    3300190: robinsRoomBackwall_009
+    3300192: robinsRoomBackwall_010
+    3300194: robinsRoomBackwall_011
+    3300196: robinsRoomBackwall_012
+    3300198: robinsRoomBackwall_013
+    3300200: robinsRoomBackwall_014
+    3300202: robinsRoomEntranceWall_001
+    3300204: robinsRoomExitWall_001
+    3300206: robinsRoomExitWall_002
+    3300208: robinsRoomSideWall_001
+    3300210: robinsRoomSideWall_002
+    3300212: robinsRoomSideWall_003
+    3300214: robinsRoomSideWall_004
+    3300216: robinsRoomSideWall_005
+    3300218: robinsRoomSideWall_006
+    3300220: robinsRoomSideWall_007
+    3300222: robinsRoomSideWall_008
+    3300224: robinsRoomSideWall_009
+    3300226: robinsRoomSideWall_010
+    3300228: robinsRoomSideWall_011
     4300000: yidelRoomExitWall_001
     4300002: Door
     4300004: DoorFrame
@@ -292,6 +524,64 @@ ModelImporter:
     4300108: teaRoom
     4300110: hallway
     4300112: daisyRoom
+    4300114: bathroom_002
+    4300116: robinsBathroomBackWall_022
+    4300118: robinsBathroomBackWall_021
+    4300120: robinsBathroomBackWall_020
+    4300122: robinsBathroomBackWall_019
+    4300124: robinsBathroomEntranceWall_001
+    4300126: robinsBathroomBackWall_018
+    4300128: robinsBathroomBackWall_017
+    4300130: robinsBathroomBackWall_016
+    4300132: robinsBathroomBackWall_015
+    4300134: robinsBathroomBackWall_014
+    4300136: robinsBathroomBackWall_013
+    4300138: robinsBathroomBackWall_012
+    4300140: robinsBathroomBackWall_011
+    4300142: robinsBathroomBackWall_010
+    4300144: robinsBathroomBackWall_009
+    4300146: robinsBathroomBackWall_008
+    4300148: robinsBathroomBackWall_007
+    4300150: robinsBathroomBackWall_006
+    4300152: robinsBathroomBackWall_005
+    4300154: robinsBathroomBackWall_004
+    4300156: robinsBathroomBackWall_003
+    4300158: robinsBathroomBackWall_002
+    4300160: robinsBathroomBackWall_001
+    4300162: robinsRoomExitWall_002
+    4300164: robinsRoomSideWall_011
+    4300166: robinsRoom_007
+    4300168: robinsRoom_006
+    4300170: robinsRoomBackwall_014
+    4300172: robinsRoomBackwall_013
+    4300174: robinsRoomBackwall_012
+    4300176: robinsRoomBackwall_011
+    4300178: robinsRoomBackwall_010
+    4300180: robinsRoomBackwall_009
+    4300182: robinsRoomBackwall_008
+    4300184: robinsRoomBackwall_007
+    4300186: robinsRoomBackwall_006
+    4300188: robinsRoomBackwall_005
+    4300190: robinsRoomBackwall_004
+    4300192: robinsRoomBackwall_003
+    4300194: robinsRoomSideWall_010
+    4300196: robinsRoomBackwall_002
+    4300198: robinsRoomSideWall_009
+    4300200: robinsRoomSideWall_008
+    4300202: robinsRoomSideWall_007
+    4300204: robinsRoomSideWall_006
+    4300206: robinsRoomSideWall_005
+    4300208: robinsRoomSideWall_004
+    4300210: robinsRoomSideWall_003
+    4300212: robinsRoomSideWall_002
+    4300214: robinsRoom_005
+    4300216: robinsRoom_004
+    4300218: robinsRoomExitWall_001
+    4300220: robinsRoom_003
+    4300222: robinsRoom_002
+    4300224: robinsRoomEntranceWall_001
+    4300226: robinsRoomBackwall_001
+    4300228: robinsRoomSideWall_001
     6400000: bathroom
     6400002: bathroom_001
     6400004: daisyBathoomWall_001
@@ -349,6 +639,64 @@ ModelImporter:
     6400108: yidelRoomEntranceWall
     6400110: yidelRoomExitWall
     6400112: yidelRoomExitWall_001
+    6400114: bathroom_002
+    6400116: robinsBathroomBackWall_001
+    6400118: robinsBathroomBackWall_002
+    6400120: robinsBathroomBackWall_003
+    6400122: robinsBathroomBackWall_004
+    6400124: robinsBathroomBackWall_005
+    6400126: robinsBathroomBackWall_006
+    6400128: robinsBathroomBackWall_007
+    6400130: robinsBathroomBackWall_008
+    6400132: robinsBathroomBackWall_009
+    6400134: robinsBathroomBackWall_010
+    6400136: robinsBathroomBackWall_011
+    6400138: robinsBathroomBackWall_012
+    6400140: robinsBathroomBackWall_013
+    6400142: robinsBathroomBackWall_014
+    6400144: robinsBathroomBackWall_015
+    6400146: robinsBathroomBackWall_016
+    6400148: robinsBathroomBackWall_017
+    6400150: robinsBathroomBackWall_018
+    6400152: robinsBathroomBackWall_019
+    6400154: robinsBathroomBackWall_020
+    6400156: robinsBathroomBackWall_021
+    6400158: robinsBathroomBackWall_022
+    6400160: robinsBathroomEntranceWall_001
+    6400162: robinsRoom_002
+    6400164: robinsRoom_003
+    6400166: robinsRoom_004
+    6400168: robinsRoom_005
+    6400170: robinsRoom_006
+    6400172: robinsRoom_007
+    6400174: robinsRoomBackwall_001
+    6400176: robinsRoomBackwall_002
+    6400178: robinsRoomBackwall_003
+    6400180: robinsRoomBackwall_004
+    6400182: robinsRoomBackwall_005
+    6400184: robinsRoomBackwall_006
+    6400186: robinsRoomBackwall_007
+    6400188: robinsRoomBackwall_008
+    6400190: robinsRoomBackwall_009
+    6400192: robinsRoomBackwall_010
+    6400194: robinsRoomBackwall_011
+    6400196: robinsRoomBackwall_012
+    6400198: robinsRoomBackwall_013
+    6400200: robinsRoomBackwall_014
+    6400202: robinsRoomEntranceWall_001
+    6400204: robinsRoomExitWall_001
+    6400206: robinsRoomExitWall_002
+    6400208: robinsRoomSideWall_001
+    6400210: robinsRoomSideWall_002
+    6400212: robinsRoomSideWall_003
+    6400214: robinsRoomSideWall_004
+    6400216: robinsRoomSideWall_005
+    6400218: robinsRoomSideWall_006
+    6400220: robinsRoomSideWall_007
+    6400222: robinsRoomSideWall_008
+    6400224: robinsRoomSideWall_009
+    6400226: robinsRoomSideWall_010
+    6400228: robinsRoomSideWall_011
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -380,7 +728,7 @@ ModelImporter:
     addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

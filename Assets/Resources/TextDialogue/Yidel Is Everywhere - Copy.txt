@@ -1,0 +1,19 @@
+Credits:
+
+Game Programming: Thomas Bilodeau
+
+Game Design: Thomas Bilodeau
+
+3D and General Art Assets: Thomas Bilodeau
+
+Pictures and Book Cover Art: Ann Herrold
+
+Writer: Ann Herrold
+
+Music: Thomas Bilodeau
+
+Sounds: 
+Big thanks to FreeSound.org contributors, which made this game 100% creepier under the CC 0 license. 
+corsica-s – cupboard creak 3 and 5 ; ohrwurm - working with shovel ; ollyoldhoff – grandfather clock ; knudsenjr – witches dance ; domrodrig – scraping a grate surprise ; arjanvanhoorn0181 – young girl screaming 2 ; adam-n – door impact 8 ; antumdeluge – ticking clock ; taira-kormori – cat 4 ; unfa - barking ; pablocandel – boy scream ; pep-molina – loud scream ; blukotek – cast iron hearth fire crackling ; grghson – blood curdling scream male ; crusoe-diplomat - scream grind chord c4 e4 ab4 d5 ; 7h3-lark – hollow door creak ; junggle – water splash big pool jump ; benjaminharveydesign – girl scream ; ramston – woman screaming of fear ; thegoliath – monster demon voice you have to stay ; nick121087 – demonic woman scream
+
+Copyright 2016 LaughingNarwhalGames

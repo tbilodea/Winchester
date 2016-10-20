@@ -6,13 +6,58 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: BaseSpine
+    100004: Bone
+    100006: Character
+    100008: footL
+    100010: footR
+    100012: head
+    100014: lowerArmL
+    100016: lowerArmR
+    100018: lowerLegL
+    100020: lowerLegR
+    100022: mittenL
+    100024: mittenR
+    100026: neck
+    100028: thumbL
+    100030: thumbR
+    100032: upperArmL
+    100034: upperArmR
+    100036: upperBack
+    100038: upperLegL
+    100040: upperLegR
     400000: //RootNode
+    400002: BaseSpine
+    400004: Bone
+    400006: Character
+    400008: footL
+    400010: footR
+    400012: head
+    400014: lowerArmL
+    400016: lowerArmR
+    400018: lowerLegL
+    400020: lowerLegR
+    400022: mittenL
+    400024: mittenR
+    400026: neck
+    400028: thumbL
+    400030: thumbR
+    400032: upperArmL
+    400034: upperArmR
+    400036: upperBack
+    400038: upperLegL
+    400040: upperLegR
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plane
+    4300002: Character
     6400000: //RootNode
-    7400000: Default Take
+    7400000: SitIdle
+    7400002: Idle
+    7400004: SitDown
+    7400006: Walk
     9500000: //RootNode
+    13700000: Character
   materials:
     importMaterials: 1
     materialName: 0
@@ -33,7 +78,287 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SitIdle
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BaseSpine
+        weight: 1
+      - path: BaseSpine/Bone
+        weight: 1
+      - path: BaseSpine/Bone/upperBack
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck/head
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/mittenL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/thumbL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/mittenR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/thumbR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL/footL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR/footR
+        weight: 1
+      - path: Character
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: BaseSpineAction
+      firstFrame: 50
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BaseSpine
+        weight: 1
+      - path: BaseSpine/Bone
+        weight: 1
+      - path: BaseSpine/Bone/upperBack
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck/head
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/mittenL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/thumbL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/mittenR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/thumbR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL/footL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR/footR
+        weight: 1
+      - path: Character
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SitDown
+      takeName: BaseSpineAction
+      firstFrame: 140
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BaseSpine
+        weight: 1
+      - path: BaseSpine/Bone
+        weight: 1
+      - path: BaseSpine/Bone/upperBack
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck/head
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/mittenL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/thumbL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/mittenR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/thumbR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL/footL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR/footR
+        weight: 1
+      - path: Character
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: BaseSpineAction
+      firstFrame: 100
+      lastFrame: 132
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BaseSpine
+        weight: 1
+      - path: BaseSpine/Bone
+        weight: 1
+      - path: BaseSpine/Bone/upperBack
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/neck/head
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/mittenL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmL/lowerArmL/thumbL
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/mittenR
+        weight: 1
+      - path: BaseSpine/Bone/upperBack/upperArmR/lowerArmR/thumbR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegL/lowerLegL/footL
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR
+        weight: 1
+      - path: BaseSpine/Bone/upperLegR/lowerLegR/footR
+        weight: 1
+      - path: Character
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

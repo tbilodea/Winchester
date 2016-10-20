@@ -6,13 +6,10 @@ using System.IO;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public static GameObject areYouSure; //double check for deleting old save
-    public bool play;
-    public bool cont;
-    public bool options;
-    public bool quit;
-    public bool yes;
-    public bool no;
+    public static MainMenuManager aMainMenuManager;
+    public GameObject clickedOn;
+    public GameObject areYouSure;
+    public GameObject optionsMenu;
 
     private bool _savedGame;
     private bool _areYouSureMenu; //flags menu up or down
@@ -20,7 +17,6 @@ public class MainMenuManager : MonoBehaviour
     void Start()
     {
         //grab the options GUI menu from the prefab
-
         //check for save and set _savedGame
         if (File.Exists(Application.persistentDataPath + "/Save.dat"))
         {
@@ -33,6 +29,7 @@ public class MainMenuManager : MonoBehaviour
     {
         //check for save
         //figure out filepath to save under
+        Debug.Log("playpressed");
         if (_savedGame)
         {
             areYouSure.SetActive(true);
@@ -59,58 +56,60 @@ public class MainMenuManager : MonoBehaviour
     {
         if (_savedGame)
         {
-            GameManager.GameManage.Load();
+            GameManager.aGameManager.Load();
         }
     }
 
     void OptionsPressed()
     {
         //set GUI options menu active
+        PauseMenu.aPauseMenu.gameObject.SetActive(true);
     }
 
     // Checks for escape press
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !optionsMenu.activeInHierarchy)
         {
             Application.Quit();
-        }
-    }
-
-    void OnMouseUpAsButton()
-    {
-        if (play)
+        }else
         {
-            if (!_areYouSureMenu)
+            optionsMenu.SetActive(false);
+        }
+        Debug.Log(clickedOn);
+        if (clickedOn)
+        {
+            if (areYouSure.activeInHierarchy)
             {
-                PlayPressed();
+                if (clickedOn.name == "YES")
+                {
+                    areYouSureYES();
+                }
+                if (clickedOn.name == "NO")
+                {
+                    areYouSureNO();
+                }
+            }
+            else
+            {
+                if (clickedOn.name == "Play")
+                {
+                    PlayPressed();
+                }
+                if (clickedOn.name == "Continue")
+                {
+                    ContinuePressed();
+                }
+                if (clickedOn.name == "Options")
+                {
+                    OptionsPressed();
+                }
+                if (clickedOn.name == "Quit")
+                {
+                    Application.Quit();
+                }
             }
         }
-        if (cont)
-        {
-            if (!_areYouSureMenu)
-            {
-                ContinuePressed();
-            }
-        }
-        if (options)
-        {
-            if (!_areYouSureMenu)
-            {
-                OptionsPressed();
-            }
-        }
-        if (quit)
-        {
-            Application.Quit();
-        }
-        if (yes)
-        {
-            areYouSureYES();
-        }
-        if (no)
-        {
-            areYouSureNO();
-        }
+        clickedOn = null;
     }
 }
